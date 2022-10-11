@@ -1,0 +1,25 @@
+Source: libobject-accessor-perl
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Rules-Requires-Root: no
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: perl (>= 5.17.1)
+Standards-Version: 4.1.3
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libobject-accessor-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libobject-accessor-perl.git
+Homepage: https://metacpan.org/release/Object-Accessor
+
+Package: libobject-accessor-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ perl (>= 5.17.1)
+Description: interface to create per object accessors
+ Object::Accessor provides an interface to create per object accessors (as
+ opposed to per Class accessors, as, for example, Class::Accessor provides).
+ .
+ You can choose to either subclass this module, and thus using its accessors
+ on your own module, or to store an Object::Accessor object inside your own
+ object, and access the accessors from there.
